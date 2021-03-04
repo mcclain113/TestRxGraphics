@@ -98,7 +98,7 @@ Main Styles
 }
 
 #title h2 {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -145,7 +145,7 @@ Main Styles
 
 #sidebar-wrapper {
 	float: left;
-	width:29%;
+	width:23%;
 	padding:10px;
 	border-right:1px solid #ccc;
 	
@@ -238,6 +238,9 @@ content: '\201D';
 }
 
 @media screen and (min-width: 421px) and (max-width: 640px) {
+	#Wrapper2{display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse}
 	#Wrapper{ width: 420px; margin:0px auto;}
 	header{ text-align:center;}
 	#navigation{ height:190px;}
@@ -257,6 +260,9 @@ content: '\201D';
 }
 
 @media screen and (min-width: 320px) and (max-width: 420px) {
+	#Wrapper2{display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse}
 	#Wrapper{ width: 320px; margin:0px auto;}
 	header{ text-align:center;}
 	#navigation{ height:190px;}
@@ -270,11 +276,14 @@ content: '\201D';
 	#comments h1,.sidebar h1{ font-size:14px; text-align:left; line-height:normal;}
 	#sidebar-wrapper {
 	float: none; font-size:13px;
-	width:95%;clear:both; 
+	width:95%;clear:both;
 	}
 	#logo{ background:url(../images/logo3.png) no-repeat; height:41px; width:150px; margin-left:auto; margin-right:auto;}
 }
 @media screen and (min-width: 0px) and (max-width: 319px) {
+	#Wrapper2{display: flex;
+	flex-wrap: wrap;
+	flex-direction: column-reverse}
 	#Wrapper{ width: 100%; margin:0px auto;}
 	header{ text-align:center;}
 	#navigation{ height:190px;}
@@ -287,7 +296,7 @@ content: '\201D';
 	#comments h1,.sidebar h1{ font-size:14px; text-align:left; line-height:normal;}
 	#sidebar-wrapper {
 	float: none; font-size:13px;
-	width:95%;clear:both; 
+	width:95%;clear:both;
 	}
 	#logo{ background:url(../images/logo3.png) no-repeat; height:41px; width:150px; margin-left:auto; margin-right:auto;}
 }
