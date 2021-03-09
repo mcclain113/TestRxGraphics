@@ -342,11 +342,11 @@ content: '\201D';
 
 
 
-.frame-area {
+.iframe {
 	display: block;
 	width: 100%;
 	max-width: 800px;
-	height: 400px;
+	height: 800px;
 	overflow: auto;
 	border: none;
 	margin: 0px;
