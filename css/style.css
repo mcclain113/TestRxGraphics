@@ -187,7 +187,7 @@ Main Styles
 	
 }
 
-#logo{ background:url(../images/logo.png) no-repeat; height:80px; width:289px;}
+#logo{ background:url(../images/logo.png) no-repeat; display:block; height:80px; width:289px; }
 
 .sidebar {
 	float: left;
@@ -270,6 +270,7 @@ content: '\201D';
 	width:30%;clear:both;
 	}
 	#logo{ background:url(../images/logo2.png) no-repeat; height:55px; width:200px; margin-left:auto; margin-right:auto;}
+
 }
 
 @media screen and (min-width: 421px) and (max-width: 640px) {
