@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Pharmacographics</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width; initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Pharmacographics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" href="images/favicon.png" type="image/ico">
 </head>
 <body>
@@ -12,31 +12,49 @@
 <!-- Div Wrapper Element Starts Here -->
 <div id="Wrapper">
 
-    <nav class="navigationmed"> <a href="howitworks.html">How it Works</a> <a href="commonuses.html">Common Uses</a> <a href="sideeffects.html">Side Effects</a> <a href="dosing.html">Dosing</a> <a href="teachingpoints.html">Teaching Points</a>  </nav>
+
   </header>
   <!-- Header Element Ends Here -->
   <!-- Div wrapper2 starts here -->
   <div id="Wrapper2">
     <!-- Article Element Starts Here -->
     <article >
-      <h1>Lisinopril</h1>
-      <p>Brand Name(s): Prinivil and Zestril</p>
-      <p>Generic Available: Yes</p>
-      <p>FDA Approval Date: 1988</p>
-      <p>Common Uses:</p>
-      <ul>
-        <li>High Blood Pressure (Hypertension)</li>
-        <li>Heart Failure</li>
-        <li>Early Onset of Heart Attack (Acute Myocardial Infarction)</li>
-      </ul>
+      <!-- Put Search Bar Here -->
+      <h1>Search Engine</h1>
+      <form name="myForm" onkeyup="return myFunction()">
+        <input
+                type="text"
+                name="searchBar"
+                id="searchBar"
+                placeholder="Search by medication name, class, or keywords"
+                aria-label="Search by medication name, class, or keywords"
+                size="40" maxlength="500"
 
+        />
+
+      </form>
+<div ID="searchdiv">
+      <ul id="charactersList"></ul>
+</div>
+  <script src="app.js"></script>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("searchdiv");
+          var y = document.forms["myForm"]["searchBar"].value;
+          if (y == "" || y == null) {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
     </article>
     <!-- Article Element Ends Here -->
   </div>
   <!-- Div wrapper2 ends here -->
   <!-- Footer Element Starts Here -->
   <footer id="copyrights">
-    <p><small>Last Reviewed 03/07/2021</small>
+    <p><small></small>
   </footer>
   <!-- Footer Element Ends Here -->
 </div>

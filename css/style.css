@@ -5,6 +5,8 @@
 header, hgroup, nav, article, section, footer, aside, address{ display:block;}
 time{  font-style:italic; padding:0px 5px;}
 address{ font-size:11px; padding:10px 10px; text-align:right }
+
+
 body{ font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 	font-weight: 400;
 	font-size: 15px;
@@ -115,10 +117,29 @@ Main Styles
 .navigationmed a:active{
 	background: #fff;
 }
+#charactersList {
+
+	padding-inline-start: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(auto, auto));
+	grid-gap: 20px;
+}
+
+.character {
+	list-style-type: none;
+	background-color: #eaeaea;
+	border-radius: 3px;
+	padding: 10px 20px;
+	display: grid;
+	grid-template-columns: auto auto;
+
+	text-align: center;}
+
+#searchdiv {display: none}
 
 #title h1 a, #title h1 a:hover, #title h1 a:hover, #title h1 a:hover  {	
 	margin: 40px auto 20px auto;
-	padding: 15px auto;
+	padding: 15px;
 	display: inline-block;
 	text-decoration: none;
 	color: #444;
@@ -346,7 +367,7 @@ content: '\201D';
 	display: block;
 	width: 100%;
 	max-width: 800px;
-	height: 800px;
+	min-height: 500px;
 	overflow: auto;
 	border: none;
 	margin: 0px;
